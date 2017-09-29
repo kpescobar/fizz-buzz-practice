@@ -14,17 +14,22 @@ public class FizzBuzz {
    * @param args
    */
   public static void main(String[] args) {
-    // TODO Auto-generated method stub
-
+    fizzbuzz(UPPER_LIMIT);
   }
   
-  public void fizzbuzz(int fizz) {
+  public static void fizzbuzz(int fizz) {
     for (int i = 0; i <= UPPER_LIMIT; i++) {
       if (i % 3 == 0) {
       System.out.println("fizz");
-      } else if (i % 5 == 0) {
+      }
+      if (i % 5 == 0) {
         System.out.println("buzz");  
-        } 
+      }
+      if ((i % 3 == 0) && (i % 5 == 0)) {
+        System.out.println("fizzbuzz");
+      } else {
+        System.out.println(i);
+      }
         
       }
     }
