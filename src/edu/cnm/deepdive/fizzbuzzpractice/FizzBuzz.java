@@ -18,15 +18,15 @@ public class FizzBuzz {
   }
   
   public static void fizzbuzz(int fizz) {
-    for (int i = 0; i <= UPPER_LIMIT; i++) {
+    for (int i = 1; i <= UPPER_LIMIT; i++) {
+      if ((i % 3 == 0) && (i % 5 == 0)) {
+        System.out.println("fizzbuzz");
+      }
       if (i % 3 == 0) {
       System.out.println("fizz");
       }
       if (i % 5 == 0) {
         System.out.println("buzz");  
-      }
-      if ((i % 3 == 0) && (i % 5 == 0)) {
-        System.out.println("fizzbuzz");
       } else {
         System.out.println(i);
       }
